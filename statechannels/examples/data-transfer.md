@@ -27,9 +27,13 @@ java –version
 ```
 
 ## Steps
-**1.** Download the [demo executable](https://github.com/Alkimi-Exchange/state-channel-demo/blob/main/binaries/tessellation-demo-assembly-0.1.jar).
+**1a.** Download the 
+       [demo executable](https://github.com/Alkimi-Exchange/state-channel-demo/blob/main/binaries/tessellation-demo-assembly-0.1.jar).<br/> 
+       Clicking on the above link will take you to a github page. Click on the `Download` button on the page to download 
+       the jar file. ![git screen](images/download-button.png)
 
-**2.** Build the demo from source following [these instructions](/statechannels/examples/data-transfer-setup).
+
+**1b.** Alternatively, you can build the demo from source following [these instructions](/statechannels/examples/data-transfer-setup).
 
 **3.** Export the following variables
 ```bash
