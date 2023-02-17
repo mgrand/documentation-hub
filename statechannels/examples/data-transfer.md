@@ -42,14 +42,25 @@ export CL_PASSWORD=<private-key-password>
 export CL_KEYALIAS=<private-key-alias>
 ```
 
-**4.** Run the jar using the default port, 19000
+If the private key file does not already exist, you will need to generate it. To generate the private key file, you will
+need to have `cl-keytool.jar`. You can fetch this from the 
+[latest Tessellation release](https://github.com/Constellation-Labs/tessellation/releases).
+
+Once you have `cl-keytool.jar`, you can generate the private key file using the following command while will use the
+environment variables you just set.
+
+```bash
+java -jar cl-keytool.jar generate
+````
+
+**4.** Run the tesselation jar using the default port, 19000
 ```bash
 java -cp tessellation-demo-assembly-0.1.jar com.tessellation.demo.Main run-demo
 ```
 
 **5.** Check the service availability of the demo application. A reply of "pong" indicates the service is available. 
 ```bash
-curl -i http://<demo-ip-address>:19000/demo/ping
+curl -i http://localhost:19000/demo/ping
 ```
 
 **6.** Create a state channel snapshot
